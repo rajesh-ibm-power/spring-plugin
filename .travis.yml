@@ -1,0 +1,14 @@
+language: java
+jdk:
+  - openjdk11
+  
+dist: xenial
+
+arch:
+  - amd64
+  - ppc64le
+
+install: 
+  - mvn install
+script:
+  - mvn test
